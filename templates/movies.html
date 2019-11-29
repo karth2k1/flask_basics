@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+</head>
+<body>
+    <h1>Movies to Watch</h1>
+    <h2>The movie list belongs to {{ name }}</h2>
+
+    <h3>All Movies: {{ movies }}</h3>
+    <h3>First: {{ movies[0] }}</h3>
+    <h3>Slicing: {{ movies[1:4] }}</h3>
+
+    <hr>
+
+    <ul>
+        {% for item in movies %}
+
+            <li>movie: {{ item }}</li>
+
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
